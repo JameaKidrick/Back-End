@@ -4,6 +4,7 @@ const Users = require("../users/users-model.js");
 const Jokes = require("./jokes-model.js");
 const restricted = require("../auth/restricted-middleware.js");
 
+// add joke
 router.post("/", restricted, (req, res) => {
   let joke = req.body;
   let user_id = req.body.user_id;
@@ -24,3 +25,5 @@ router.post("/", restricted, (req, res) => {
       res.status(404).json({ message: "no user found" });
     });
 });
+
+module.exports = router;
