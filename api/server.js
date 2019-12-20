@@ -14,7 +14,7 @@ server.use(cors());
 
 server.use("/api/auth", authRouter);
 server.use("/api/users", usersRouter);
-server.use("/api/jokes", jokesRouter);
+//server.use("/api/jokes", jokesRouter);
 
 server.get("/", (req, res) => {
   res.send("Server live");
