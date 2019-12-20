@@ -2,10 +2,10 @@ require("dotenv").config();
 
 module.exports = {
   development: {
-    client: "pg",
+    client: "sqlite3",
     useNullAsDefault: true,
     connection: {
-      filename: "./database/dadjokes.dbu"
+      filename: "./database/dadjokes.db3"
     },
     migrations: {
       directory: "./database/migrations"
