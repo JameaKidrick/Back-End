@@ -2,6 +2,9 @@
   "name": "Back-End",
   "version": "1.0.0",
   "description": "Dad jokes 7",
+  "engines": {
+    "node": "12.13.0"
+  },
   "main": "index.js",
   "scripts": {
     "server": "nodemon index.js",
